@@ -30,6 +30,9 @@ def predict_race(name):
 
     return predicted_race
 # Test the function
-input_name = input("Enter a name to predict the race: ")
-predicted_race = predict_race(input_name)
-print(f"Predicted Race: {predicted_race}")
+input_name = ""
+while input_name != "end test":
+    input_name = input("Enter a name to predict the race: ")
+    predicted_race = predict_race(input_name)
+    print(f"Predicted Race: {predicted_race}")
+
